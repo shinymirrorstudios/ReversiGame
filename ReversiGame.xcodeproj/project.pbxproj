@@ -333,6 +333,11 @@
 				CLASSPREFIX = "";
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Razeware LLC";
+				TargetAttributes = {
+					72A5A0381671D8F600AF63F4 = {
+						DevelopmentTeam = 3V9P9PSEL3;
+					};
+				};
 			};
 			buildConfigurationList = 72A5A0331671D8F600AF63F4 /* Build configuration list for PBXProject "ReversiGame" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -537,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHCReversiGame/ReversiGame-Prefix.pch";
 				INFOPLIST_FILE = "SHCReversiGame/ReversiGame-Info.plist";
@@ -554,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHCReversiGame/ReversiGame-Prefix.pch";
 				INFOPLIST_FILE = "SHCReversiGame/ReversiGame-Info.plist";

@@ -22,8 +22,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        _row = row;
-        _column = column;
+        _row = (int)row;
+        _column = (int)column;
         _board = board;
         
         // create the views for the playing piece graphics
@@ -68,7 +68,7 @@
     }];
 }
 
-- (void)cellStateChanged:(BoardCellState)state forColumn:(NSInteger)column andRow:(NSInteger)row
+- (void)cellStateChanged:(BoardCellState)state forColumn:(int)column andRow:(int)row
 {
     if ((column == _column && row == _row) || (column == -1 && row == -1)) {
         [self update];

@@ -114,9 +114,9 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
     _gameState = GameStatePreGame;
 }
 
-- (BOOL)isValidMoveToColumn:(int)column andRow:(int) row;
+- (BOOL)isValidMoveToColumn:(long)column andRow:(long) row;
 {
-    return [self isValidMoveToColumn:column andRow:row forState:self.nextMove];
+    return [self isValidMoveToColumn:(int)column andRow:(int)row forState:self.nextMove];
 }
 
 - (BOOL)isValidMoveToColumn:(int)column andRow:(int)row forState:(BoardCellState)state
@@ -153,8 +153,8 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
     
     // check the 8 play directions and flip pieces
     for (int i=0; i<8; i++) {
-        [self flipOpponentCountersForColumn:column
-                                      andRow:row
+        [self flipOpponentCountersForColumn:(int)column
+                                      andRow:(int)row
                       withNavigationFunction:_boardNavigationFunctions[i]
                                      toState:self.nextMove];
     }
@@ -247,7 +247,9 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
     // a piece of the current state is reached
     do {
         // advance to the next cell
-        navigationFunction(&column, &row);
+      long longColumn = column;
+      long longRow = row;
+        navigationFunction(&longColumn, &longRow);
         currentCellState = [super cellStateAtColumn:column andRow:row];
         [self setCellState:state forColumn:column  andRow:row];
     } while(column>=0 && column<=7 &&

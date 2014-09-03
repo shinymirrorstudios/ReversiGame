@@ -66,7 +66,7 @@
 -(void)informDelegateOfStateChanged:(BoardCellState) state forColumn:(NSInteger)column andRow:(NSInteger) row
 {
     if ([_delegate respondsToSelector:@selector(cellStateChanged:forColumn:andRow:)]) {
-        [_delegate cellStateChanged:state forColumn:column andRow:row];
+        [_delegate cellStateChanged:state forColumn:(int)column andRow:(int)row];
     }
 }
 

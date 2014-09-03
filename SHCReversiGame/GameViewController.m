@@ -75,8 +75,8 @@
     _gameOverImage.hidden = (gameState != GameStateOver);
     _startButtonsView.hidden = (gameState == GameStateOn);
 
-    _whiteScore.text = [NSString stringWithFormat:@"%d", _board.whiteScore];
-    _blackScore.text = [NSString stringWithFormat:@"%d", _board.blackScore];
+    _whiteScore.text = [NSString stringWithFormat:@"%ld", (long)_board.whiteScore];
+    _blackScore.text = [NSString stringWithFormat:@"%ld", (long)_board.blackScore];
 
     if (gameState == GameStateOver) {
         _whiteActive.hidden = YES;

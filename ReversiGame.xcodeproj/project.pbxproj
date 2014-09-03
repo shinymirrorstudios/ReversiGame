@@ -540,7 +540,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHCReversiGame/ReversiGame-Prefix.pch";
 				INFOPLIST_FILE = "SHCReversiGame/ReversiGame-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ReversiGame;
 				SWIFT_OBJC_BRIDGING_HEADER = "SHCReversiGameTests/ReversiGame-Bridging-Header.h";
@@ -557,7 +557,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHCReversiGame/ReversiGame-Prefix.pch";
 				INFOPLIST_FILE = "SHCReversiGame/ReversiGame-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ReversiGame;
 				SWIFT_OBJC_BRIDGING_HEADER = "SHCReversiGameTests/ReversiGame-Bridging-Header.h";
